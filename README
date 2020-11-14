@@ -1,0 +1,80 @@
+maayanchetrit,lea.khodo
+Maayan chetrit,Lea khodorkovski
+
+==================
+=  Internet Sites:  =
+https://www.dotnetperls.com/random-python
+https://matplotlib.org/examples/color/named_colors.html
+https://docs.unity3d.com/ScriptReference/GUI.Label.html
+https://stackoverflow.com/questions/166506/finding-local-ip-addresses-using-pythons-stdlib
+==================
+
+==================
+=  Description:  =
+In this exercise we built the game four in a row.
+
+The game four in a row contains a board with disks so there are two different
+disks one of PLAYER ONE and second of PLAYER TWO. At each stage in the game
+each player in turn put his disc on the board. The disks are filled from the
+bottom of the board to the top of the column that the user selects.
+The aim of each player's game is to be the first to make 4 discs in a row from
+his disks (row, column or diagonally). If the board is filled and no one wins
+(there are no 4 discs in a row or column or diagonally of any of the players)
+then there is a draw.
+
+In this exercise the game is built to be played on two different computers
+connected to the same network, when the player starts is the PLAYER ONE on
+the first computer and the second to play is PLAYER TWO from the second
+computer.
+There are 3 options: play a person against another person, play a person
+against the computer (AI) or the computer will play against a computer
+(AI against AI). In each option, one of the parties may be the player who
+starts the game and vice versa.
+
+In this exercise we used OOP programming, by building files and different
+departments that are responsible for parts of running the game. Some of the
+files and classes we used included using the GUI (game design and graphics),
+updating the game's graphical interface, using communication and connecting
+different computers on the same network, including the differentiation between
+the first computer player's turn and the second computer player's turn,
+and updating the moves of the other player to the game board on the computer
+of the first player(and the vice versa) and when one of the players is a
+computer Random the move of the computer and updating of the boards.
+
+This exercise contains the following files that run together the game:
+four_in_a_row.py- This file is the main file that responsible to run the game
+and connect between all the other classes the file have various function that
+response to clicking on the game board in the requested column of the player
+and sending to the relevant functions to make the move and in the case of AI
+perform the action when the turn of the player arrives
+ai.py- this file containing class that responsible to play the moves of the
+computer (AI).
+game.py- The file is responsible for the game moves. The algorithms and
+functions in the file perform the actions of the players, identify whether
+there is a winner, and make sure that the actions that the players perform
+in accordance with the rules of the game. all the over files updating what
+going in the game in each turn by functions from this file.
+gui.py-this file contains the class GuiBoard that responsible to  show
+the graphics of the game to the user (on the game board). and send and process
+a massage from other users. the function in this file updating the graphic game
+board in each turn in the game and prompt for winner or draw when the game is
+over.(also prompt for illegal move if one of the players try to put a disk at
+full column)
+
+the game also using the communicator.py file that given with the exercise for
+the connection.
+==================
+
+
+======================
+=  Special Comments : =
+======================
+
+
+
+
+
+
+
+
+
